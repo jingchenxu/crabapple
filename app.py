@@ -1,7 +1,3 @@
-from flask import Flask
+from crabapple import create_app
 
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-  return 'Hello Flask!'
+app = create_app()
