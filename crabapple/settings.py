@@ -16,7 +16,7 @@ class DevelopmentConfig(BaseConfig):
   '''
   开发环境配置
   '''
-  SQLALCHEMY_DATABASE_URI = os.getenv('SECRECT_KEY', 'dev key')
+  SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', 'dev key')
   pass
 
 class TestingConfig(BaseConfig):
